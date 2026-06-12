@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Web Development 🎓</title>
+    <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
     <style>
         * {
             margin: 0;
@@ -484,3 +485,14 @@ button.addEventListener(<span class="text">"click"</span>, sayHello);
 
         // Quiz Answer
         function checkAnswer(element, isCorrect) {
+            if (isCorrect) {
+                element.classList.add('correct');
+                element.textContent = '✓ Correct!';
+            } else {
+                element.classList.add('wrong');
+                element.textContent = '✗ Wrong!';
+            }
+        }
+    </script>
+</body>
+</html>
